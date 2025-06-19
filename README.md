@@ -10,6 +10,12 @@ A GPU-driven particle system that smoothly transitions between various web devel
 
 ---
 
+## 🚀 Live Demo
+
+🔗 [https://your-agency.vercel.app](https://r3f-gpgpu-particles-tsl-webgpu.vercel.app/)
+
+---
+
 ## ⚙️ Technologies Used
 
 - [Three.js](https://threejs.org/)
@@ -34,15 +40,22 @@ With **TSL**, the process becomes even easier and cleaner. It allows you to defi
 
 ## 🎯 Highlights
 
-Pure GPGPU compute using WebGPU
+- Pure GPGPU compute using WebGPU
 
-Real-time animated particles based on 3D models
+- Real-time animated particles based on 3D models
 
-Smooth transitions between objects
+- Smooth transitions between objects
 
-Minimal CPU use — GPU does the heavy lifting
+- Minimal CPU use — GPU does the heavy lifting
 
-Easy shader programming with TSL
+- Easy shader programming with TSL
+
+---
+
+## 3D Models Attribution
+
+The 3D models used in this project have been obtained from [Sketchfab](https://sketchfab.com/).  
+Please refer to individual model licenses on Sketchfab for proper usage and attribution.
 
 ---
 
