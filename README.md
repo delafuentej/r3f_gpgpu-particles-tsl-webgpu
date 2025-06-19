@@ -8,21 +8,52 @@ Render hundreds of thousands of floating particles to form 3D models and 3D text
 
 A GPU-driven particle system that smoothly transitions between various web development tool logos — such as HTML5, Docker, React, GitHub, and Three.js — all beautifully rendered using animated particles.
 
----
-
 ## 🚀 Live Demo
 
-🔗 [https://your-agency.vercel.app](https://r3f-gpgpu-particles-tsl-webgpu.vercel.app/)
+🔗 [demo](https://r3f-gpgpu-particles-tsl-webgpu.vercel.app/)
 
 ---
 
 ## ⚙️ Technologies Used
 
-- [Three.js](https://threejs.org/)
-- [Three Shading Language (TSL)](https://threejs.org/manual/#en/tsl)
-- [WebGPU](https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API)
-- [GLTFLoader](https://threejs.org/docs/#examples/en/loaders/GLTFLoader)
-- Blender (for mesh preparation and optimization)
+### Core Libraries
+
+- **React** – Frontend JavaScript library for building user interfaces.
+- **React DOM** – React's renderer for web platforms.
+- **Three.js** – JavaScript 3D library for rendering 3D graphics.
+  - `three/webgpu` – Used for enabling WebGPU rendering pipeline.
+  - `three/tsl` – Utilized for custom shader logic with the TSL (Three Shader Language) module.
+  - `three/src/math/MathUtils.js` – Imported for mathematical utilities such as `lerp`.
+
+### React-Three Ecosystem
+
+- **@react-three/fiber** – React renderer for Three.js, bringing the full power of React to 3D scenes.
+- **@react-three/drei** – Useful helpers and abstractions on top of R3F for lights, cameras, controls, and more.
+
+### Styling
+
+- **Tailwind CSS** – Utility-first CSS framework for styling.
+- **@tailwindcss/vite** – Integration of Tailwind CSS with Vite for fast builds and HMR.
+
+### Developer Tools
+
+- **Leva** – GUI panel for tweaking values live during development.
+- **Stats (from drei)** – Performance monitoring for Three.js scenes.
+- **Vite** – Lightning-fast dev server and bundler.
+- **@vitejs/plugin-react** – React plugin for Vite to support JSX and Fast Refresh.
+- **Globals** – Provides browser-compatible global variables for Node-like environments.
+
+### 💡 Advanced Rendering with WebGPU
+
+- **three/webgpu** – Utilizes the modern WebGPU API via Three.js for enhanced performance and rendering capabilities.
+- WebGPU renderer replaces the default WebGL renderer for better GPU utilization and future-proofing.
+
+### ✨ Postprocessing with TSL (Three Shader Language)
+
+- **three/tsl** – Uses Three.js’s experimental Shader Node API (`tsl`) for modular, reusable shader code.
+- Implements postprocessing effects like `bloom`, `emissive`, and `mrt` using:
+  - `bloom` from `three/examples/jsm/tsl/display/BloomNode.js`
+  - `pass`, `emissive`, `output`, and `mrt` from `three/tsl`
 
 ---
 

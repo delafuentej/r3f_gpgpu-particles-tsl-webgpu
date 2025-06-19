@@ -7,10 +7,6 @@ export const Experience = () => {
       <Environment preset="warehouse" />
       <OrbitControls />
       <GPGPUParticles />
-      {/* <mesh>
-        <boxGeometry />
-        <meshStandardMaterial color="hotpink" />
-      </mesh> */}
     </>
   );
 };

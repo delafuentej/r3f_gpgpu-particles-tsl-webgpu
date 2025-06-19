@@ -98,16 +98,19 @@ export const GPGPUParticles = ({ nbParticles = 1000000 }) => {
     endColor,
     debugColor,
     emissiveIntensity,
-  } = useControls({
-    currentGeometry: {
-      options: ["Docker", "Three", "HTML", "React", "Github"],
-      value: "Docker",
+  } = useControls(
+    {
+      currentGeometry: {
+        options: ["Docker", "Three", "HTML", "React", "Github"],
+        value: "Docker",
+      },
+      startColor: "#00ffcc",
+      endColor: "#9900ff",
+      debugColor: false,
+      emissiveIntensity: 0.1,
     },
-    startColor: "#00ffcc",
-    endColor: "#9900ff",
-    debugColor: false,
-    emissiveIntensity: 0.1,
-  });
+    { collapsed: true }
+  );
 
   const tmpColor = new Color();
 
@@ -156,7 +159,7 @@ export const GPGPUParticles = ({ nbParticles = 1000000 }) => {
       data[i * 4 + 0] = 0; //x
       data[i * 4 + 1] = 0; //y
       data[i * 4 + 2] = 0; //z
-      data[i * 4 + 3] = 1; // alpha
+      data[i * 4 + 3] = 1; // alphaƒ
     }
 
     const texture = new DataTexture(data, size, size, RGBAFormat, FloatType); // the FloatType is used to store the data as floating-point values
