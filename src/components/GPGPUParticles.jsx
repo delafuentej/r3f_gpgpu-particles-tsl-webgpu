@@ -81,7 +81,7 @@ const randValue = /*#__PURE__*/ Fn(({ min, max, seed = 42 }) => {
   return hash(instanceIndex.add(seed)).mul(max.sub(min)).add(min);
 });
 
-export const GPGPUParticles = ({ nbParticles = 1000000 }) => {
+export const GPGPUParticles = ({ nbParticles = 500000 }) => {
   //Let's lerp the colors to have a smooth transition between the models:
 
   //to load the models
