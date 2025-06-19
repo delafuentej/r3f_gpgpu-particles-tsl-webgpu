@@ -6,16 +6,7 @@ Render hundreds of thousands of floating particles to form 3D models and 3D text
 
 ## 🌌 Demo
 
-A GPU-driven particle system that smoothly transitions between a fox 🦊, a book 📖, and 3D text — all rendered in particles.
-
----
-
-## 📦 Project Contents
-
-- ✅ Starter Pack
-- ✅ Final Code
-- ✅ Optimized 3D Models
-- ✅ Full GPGPU Particle System using TSL & WebGPU
+A GPU-driven particle system that smoothly transitions between various web development tool logos — such as HTML5, Docker, React, GitHub, and Three.js — all beautifully rendered using animated particles.
 
 ---
 

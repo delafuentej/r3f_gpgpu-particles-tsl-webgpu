@@ -5,6 +5,7 @@ import { Suspense, useState } from "react";
 import * as THREE from "three/webgpu";
 import { Experience } from "./components/Experience";
 import { PostProcessing } from "./components/PostProcessing";
+import PreloadModels from "./components/PreloadModels";
 
 function App() {
   const ppSettings = useControls(
@@ -36,6 +37,7 @@ function App() {
   return (
     <>
       <Stats />
+      <PreloadModels />
       <Canvas
         shadows
         camera={{ position: [3, 3, 5], fov: 30 }}
